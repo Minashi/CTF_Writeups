@@ -1,5 +1,5 @@
 # zaza
-### 20 Points
+### 50 Points
 Desctiption: Bedtime!
 
 nc challs.actf.co 32760
